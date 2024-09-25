@@ -1,0 +1,15 @@
+user:
+  email:        testuser123@gmail.com
+  password:     Test.password123
+  cf_password:  Test.password123
+  product:      Phone
+  name:         Kasidet
+  surname:      Aphiphathrarathakorn
+  address:      123/45
+  phone:        0123456789
+  creditcard:   4111111111111111    
+  exp:          12/2030    
+  cvc:          123
+
+product:
+  product_name: Coppee phone 1  
