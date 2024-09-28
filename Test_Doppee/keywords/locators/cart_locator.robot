@@ -1,7 +1,3 @@
-*** Settings ***
-Resource    ../pages/import.robot
-
-
 *** Variables ***
 ${cart_locator.input_txt_name}          xpath=//input[@id='form_item_name']
 ${cart_locator.input_txt_surName}       xpath=//input[@id='form_item_surName']

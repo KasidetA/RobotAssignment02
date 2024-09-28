@@ -1,5 +1,5 @@
 *** Keywords ***
-Fill in an Email
+Fill in an email
     [Arguments]    ${email}
     SeleniumLibrary.Input Text          ${login_locator.email_container}    ${email}
 
@@ -7,10 +7,9 @@ Fill in password
     [Arguments]    ${password}  
     SeleniumLibrary.Input Text          ${login_locator.password_container}    ${password}
 
-Click login and ok_btn
+Click login and ok button
     SeleniumLibrary.Click Button        ${login_locator.log_in_btn} 
-    SeleniumLibrary.Wait Until Element Is Visible    ${log_in_locator.ok_btn}     10s
-    SeleniumLibrary.Click Button        ${login_locator.ok_btn}
+    Wait and click element              ${login_locator.ok_btn}
 
-Click Sign up button
+Click sign up button
     SeleniumLibrary.Click Element       ${login_locator.sign_up_btn}

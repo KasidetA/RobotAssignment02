@@ -1,18 +1,14 @@
 *** Keywords ***
-Type and Search Product
+Type and search product
     [Arguments]    ${product}
     SeleniumLibrary.Input Text          ${home_locator.input_txt}     ${product}
     SeleniumLibrary.Click Element       ${home_locator.search_btn}
 
-Click Add Product to Cart
+Click add product to cart
     [Arguments]    ${product.product_name}
     ${new_locator}  String.Replace String   ${home_locator.search_txt_product_name}     {{product}}     ${product.product_name}
+    Wait and click element                          ${new_locator}
 
-    SeleniumLibrary.Wait Until Element Is Visible       ${new_locator}    10s
-    SeleniumLibrary.Click Element                       ${new_locator}
-
-Click Add to Cart Button and OK Button
-    SeleniumLibrary.Wait Until Element Is Visible       ${home_locator.add_to_cart_btn}     10s
-    SeleniumLibrary.Click Element                       ${home_locator.add_to_cart_btn}
-    SeleniumLibrary.Wait Until Element Is Visible       ${home_locator.ok_popup}            10s
-    SeleniumLibrary.Click Element                       ${home_locator.ok_popup}
+Click add to cart button and ok button
+    Wait and click element                          ${home_locator.add_to_cart_btn}
+    Wait and click element                          ${home_locator.ok_popup}

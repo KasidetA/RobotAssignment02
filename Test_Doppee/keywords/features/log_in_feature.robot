@@ -1,10 +1,6 @@
-*** Settings ***
-Resource    ../pages/import.robot
-
-
 *** Keywords ***
 Login
     [Arguments]    ${email}    ${password}
-    Fill in an Email    ${email}
-    Fill in password    ${password}
-    Click login and ok_btn
+    log_in_page.Fill in an email    ${email}
+    log_in_page.Fill in password    ${password}
+    log_in_page.Click login and ok button
