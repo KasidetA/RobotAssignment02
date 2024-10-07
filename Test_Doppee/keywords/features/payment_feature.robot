@@ -1,5 +1,5 @@
 *** Keywords ***
-Fill in Credit Card Details and Confirm Payment
+Fill in credit card details and confirm payment
     [Arguments]    ${creditcard}    ${exp}    ${cvc}    ${name}
     payment_page.Fill card number in credit card details         ${creditcard}  
     payment_page.Fill expire date in credit card details         ${exp}        

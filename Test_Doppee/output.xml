@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-07T15:52:05.262883" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\FCTKSV\Dropbox\My PC (FCTKSVF-H6FAA2P)\Desktop\robot\Test_doppee\testcases\test.robot">
+<test id="s1-t1" name="Test Register" line="9">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>C:\\Users\\FCTKSV\\Dropbox\\My PC (FCTKSVF-H6FAA2P)\\Desktop\\robot\\Test_doppee\\testcases/../resources/setting/import.robot</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-07T15:52:05.295890" elapsed="0.000000"/>
+</kw>
+<kw name="common.Generate new email">
+<msg time="2024-10-07T15:52:05.296881" level="FAIL">No keyword with name 'common.Generate new email' found.</msg>
+<status status="FAIL" start="2024-10-07T15:52:05.296881" elapsed="0.000000">No keyword with name 'common.Generate new email' found.</status>
+</kw>
+<kw name="common.Click user icon">
+<status status="NOT RUN" start="2024-10-07T15:52:05.297666" elapsed="0.000000"/>
+</kw>
+<kw name="log_in_page.Click sign up button">
+<status status="NOT RUN" start="2024-10-07T15:52:05.297666" elapsed="0.000000"/>
+</kw>
+<kw name="register_page.Input register email">
+<arg>${modified_email}</arg>
+<status status="NOT RUN" start="2024-10-07T15:52:05.297666" elapsed="0.000000"/>
+</kw>
+<kw name="register_page.Input register password">
+<arg>${user.password}</arg>
+<status status="NOT RUN" start="2024-10-07T15:52:05.297666" elapsed="0.000000"/>
+</kw>
+<kw name="register_page.Input confirm password">
+<arg>${user.cf_password}</arg>
+<status status="NOT RUN" start="2024-10-07T15:52:05.297666" elapsed="0.000000"/>
+</kw>
+<kw name="register_page.Click Submit button">
+<status status="NOT RUN" start="2024-10-07T15:52:05.297666" elapsed="0.000000"/>
+</kw>
+<tag>RegisterS</tag>
+<status status="FAIL" start="2024-10-07T15:52:05.294880" elapsed="0.003790">No keyword with name 'common.Generate new email' found.</status>
+</test>
+<test id="s1-t2" name="Test Log in" line="21">
+<kw name="common.Click user icon">
+<msg time="2024-10-07T15:52:05.299669" level="FAIL">No keyword with name 'common.Click user icon' found.</msg>
+<status status="FAIL" start="2024-10-07T15:52:05.299669" elapsed="0.000000">No keyword with name 'common.Click user icon' found.</status>
+</kw>
+<kw name="log_in_feature.Login">
+<arg>${modified_email}</arg>
+<arg>${user.password}</arg>
+<status status="NOT RUN" start="2024-10-07T15:52:05.299669" elapsed="0.001008"/>
+</kw>
+<kw name="home_page.Type and search product">
+<arg>${user.product}</arg>
+<status status="NOT RUN" start="2024-10-07T15:52:05.300677" elapsed="0.000000"/>
+</kw>
+<kw name="home_feature.add product to cart">
+<arg>${product.product_name}</arg>
+<status status="NOT RUN" start="2024-10-07T15:52:05.300677" elapsed="0.000000"/>
+</kw>
+<kw name="common.Open cart">
+<status status="NOT RUN" start="2024-10-07T15:52:05.300677" elapsed="0.000000"/>
+</kw>
+<kw name="cart_feature.Fill in delivery info and start payment process">
+<arg>${user.name}</arg>
+<arg>${user.surname}</arg>
+<arg>${user.address}</arg>
+<arg>${user.phone}</arg>
+<arg>${modified_email}</arg>
+<status status="NOT RUN" start="2024-10-07T15:52:05.300677" elapsed="0.000000"/>
+</kw>
+<kw name="payment_page.Select payment method">
+<status status="NOT RUN" start="2024-10-07T15:52:05.300677" elapsed="0.000000"/>
+</kw>
+<kw name="payment_feature.Fill in credit card details and confirm payment">
+<arg>${user.creditcard}</arg>
+<arg>${user.exp}</arg>
+<arg>${user.cvc}</arg>
+<arg>${user.name}</arg>
+<status status="NOT RUN" start="2024-10-07T15:52:05.300677" elapsed="0.000000"/>
+</kw>
+<kw name="common.Click user icon">
+<status status="NOT RUN" start="2024-10-07T15:52:05.301669" elapsed="0.000000"/>
+</kw>
+<kw name="user_profile_page.Log out">
+<status status="NOT RUN" start="2024-10-07T15:52:05.301669" elapsed="0.000000"/>
+</kw>
+<tag>Login</tag>
+<status status="FAIL" start="2024-10-07T15:52:05.298670" elapsed="0.002999">No keyword with name 'common.Click user icon' found.</status>
+</test>
+<status status="FAIL" start="2024-10-07T15:52:05.264874" elapsed="0.037796"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Login</stat>
+<stat pass="0" fail="1" skip="0">RegisterS</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-07T15:52:05.293888" level="ERROR">Error in file 'C:\Users\FCTKSV\Dropbox\My PC (FCTKSVF-H6FAA2P)\Desktop\robot\Test_doppee\testcases\test.robot' on line 2: Resource file 'C:\Users\FCTKSV\Dropbox\My PC (FCTKSVF-H6FAA2P)\Desktop\robot\Test_doppee\testcases..esourcessettingimport.robot' does not exist.</msg>
+</errors>
+</robot>

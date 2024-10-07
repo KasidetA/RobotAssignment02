@@ -3,3 +3,5 @@ uat:
 sit:
   url : https://doppee.doppio-tech.com  
 
+ui_setting:
+  browser: Chrome
